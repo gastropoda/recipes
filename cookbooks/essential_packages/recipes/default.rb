@@ -9,3 +9,5 @@
 
 package "tmux"
 package "vim-gnome"
+package "xsel"
+package "xclip"
