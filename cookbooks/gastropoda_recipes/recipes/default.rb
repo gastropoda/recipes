@@ -18,7 +18,7 @@ end
 ruby_block "reload_cookbooks" do
   block do
     Chef::Log.info "Reloading updated cookbooks"
-    Chef::Config.from_file("#{node["chef_client"]["conf_dir"]}/client.rb")
+    Chef::Config.from_file("/etc/chef/client.rb")
   end
   action :nothing
 end
