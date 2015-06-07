@@ -17,7 +17,7 @@ end
 
 ruby_block "reload_cookbooks" do
   block do
-    Chef::Log.info "Reloading updated cookbooks"
+    Chef::Log.warn "Cookbooks changed, rerun!"
     Chef::Config.from_file("/etc/chef/client.rb")
   end
   action :nothing
