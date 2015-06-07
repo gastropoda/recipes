@@ -12,12 +12,4 @@ git "/home/artm/.chef" do
   user "artm"
   group "artm"
   action :sync
-  notifies :create, "ruby_block[reload_cookbooks]", :immediately
-end
-
-ruby_block "reload_cookbooks" do
-  block do
-    raise "Cookbooks changed, rerun `sudo chef-client`"
-  end
-  action :nothing
 end
