@@ -5,7 +5,7 @@ This file is used to list changes made in each version of the gastropoda_recipes
 
 0.1.0
 -----
-- [your_name] - Initial release of gastropoda_recipes
+- artm - Initial release of gastropoda_recipes
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
