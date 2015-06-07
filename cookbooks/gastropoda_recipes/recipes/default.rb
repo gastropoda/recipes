@@ -12,10 +12,12 @@ git "/home/artm/.chef" do
   user "artm"
   group "artm"
   action :sync
-  notifies :run, "bash[chef-client]", :delayed
+  notifies :run, "ruby_block[chef-client]", :delayed
 end
 
-bash "chef-client" do
-  code "killall -HUP chef-client ; chef-client"
+ruby_block "chef-client" do
+  block do
+    spawn "chef-client"
+  end
   action :nothing
 end
