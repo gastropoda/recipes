@@ -16,6 +16,6 @@ git "/home/artm/.chef" do
 end
 
 bash "chef-client" do
-  code "killall chef-client ; chef-client"
+  code "killall -HUP chef-client ; chef-client"
   action :nothing
 end
