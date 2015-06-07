@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "rcm"
+include_recipe "essential_packages::rcm"
 
 package "git"
 
