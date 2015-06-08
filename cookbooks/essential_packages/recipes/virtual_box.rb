@@ -8,6 +8,8 @@ remote_file cached_file do
   source url
 end
 
+package "libsdl1.2debian"
+
 dpkg_package cached_file do
   action :install
 end
