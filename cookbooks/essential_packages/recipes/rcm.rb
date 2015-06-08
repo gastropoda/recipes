@@ -1,18 +1,11 @@
-#
-# Cookbook Name:: rcm
-# Recipe:: default
-#
-# Copyright 2015, YOUR_COMPANY_NAME
-#
-# All rights reserved - Do Not Redistribute
-#
+require "uri"
 
-base_name = "rcm_1.2.3-1_all.deb"
-url_base = "https://thoughtbot.github.io/rcm/debs"
+url = "https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb"
+base_name = File.basename(URI.parse(url).path)
 cached_file = "#{Chef::Config[:file_cache_path]}/#{base_name}"
 
 remote_file cached_file do
-  source "#{url_base}/#{base_name}"
+  source url
 end
 
 dpkg_package cached_file do
