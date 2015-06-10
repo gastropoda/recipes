@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+package "git"
+package "gitk"
 package "tmux"
 package "vim-gnome"
 package "xsel"
