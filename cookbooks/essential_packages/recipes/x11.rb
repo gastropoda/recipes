@@ -1,0 +1,5 @@
+package "gitk"
+package "vim-gnome"
+package "xsel"
+package "xclip"
+package "gimp"
