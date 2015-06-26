@@ -1,4 +1,5 @@
 package "ruby2.0"
+package "ruby2.0-dev"
 
 # See https://bugs.launchpad.net/ubuntu/+source/ruby2.0/+bug/1310292
 # and https://bugs.launchpad.net/ubuntu/+source/ruby2.0/+bug/1310292/comments/25
