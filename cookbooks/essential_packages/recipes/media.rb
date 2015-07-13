@@ -1,0 +1,6 @@
+package "gimp"
+package "soundconverter"
+package "fbreader"
+package "vlc"
+package "audacity"
+package "oggvideotools"
